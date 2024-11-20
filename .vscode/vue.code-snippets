@@ -1,0 +1,23 @@
+{
+    "Vue 3 File Structure": {
+      "prefix": "vfc",
+      "body": [
+        "<script setup>",
+        "import { ref } from 'vue';",
+        "",
+        "// Declare your variables here",
+        "const example = ref('');",
+        "</script>",
+        "",
+        "",
+        "<template>",
+        "  <div>",
+        "    $0",
+        "  </div>",
+        "</template>",
+        "",
+      ],
+      "description": "Basic structure for a Vue 3 file with template, script setup, and style."
+    }
+  }
+  
