@@ -116,8 +116,8 @@ self.addEventListener('activate', (event) => {
 // Stratégie de cache modifiée pour gérer les URLs valides
 self.addEventListener('fetch', (event) => {
   // Ignorer les requêtes non valides
-  if (!isValidUrl(event.request.url)) {
-    return;
+ if (!isValidUrl(event.request.url) || event.request.method !== 'GET') {
+    return; // Ignore les requêtes non GET ou invalides
   }
 
   event.respondWith(
